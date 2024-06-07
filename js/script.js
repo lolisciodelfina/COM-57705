@@ -1,5 +1,5 @@
 //variables//
-let turnosDispo=10;
+let turnosDispo= 10;
 //variables globales para utilizar en la función//
 let patio = 0;
 let salon = 0;
@@ -9,7 +9,8 @@ function lugares(lugar, nombreLugar){
     lugar++;
     console.log("Hay " + lugar + " lugares ocupados en el/la " + nombreLugar);
 }
-
+let reservas= [];
+function iniciarReservas() {
 while(turnosDispo>0){
     alert ("Quedan " + turnosDispo + " turnos disponibles para Junio...")
     console.log(turnosDispo);
@@ -42,5 +43,16 @@ while(turnosDispo>0){
         }
     }
     turnosDispo--;
+    function Reserva(nombres, cantidadPersonas, diaDeJunio, ubi) {
+        this.nombres = nombres.toUpperCase();
+        this.cantidadPersonas = parseInt(cantidadPersonas);
+        this.diaDeJunio = parseInt(diaDeJunio);
+        this.ubi = ubi;
+    }
+    let reserva= new Reserva(nombre, cantPersonas, diaJunio, ubicacion);
+    reservas.push(reserva);
+    console.log(reserva);
 }
 alert ("Lo sentimos, ya no tenemos disponibilidad para Junio, gracias por querer reservar con nosotros!");
+}
+document.getElementById("startButton").addEventListener("click", iniciarReservas);
