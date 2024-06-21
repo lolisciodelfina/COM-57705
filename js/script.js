@@ -1,9 +1,11 @@
-//variables//
+/*//variables//
 let turnosDispo= 10;
 //variables globales para utilizar en la función//
 let patio = 0;
 let salon = 0;
 let terraza = 0;
+//declaraión de constantes
+
 //calcula la cantidad de lugares reservados en cada sector : patio, salón y terraza//
 function lugares(lugar, nombreLugar){
     lugar++;
@@ -54,5 +56,5 @@ while(turnosDispo>0){
     console.log(reserva);
 }
 alert ("Lo sentimos, ya no tenemos disponibilidad para Junio, gracias por querer reservar con nosotros!");
-}
+}*/
 document.getElementById("startButton").addEventListener("click", iniciarReservas);
