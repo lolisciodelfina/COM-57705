@@ -4,6 +4,13 @@ const cabecera = document.getElementById('header');
 const navegacion = document.createElement('navbar');
 const nav = document.createElement('nav');
 const ul = document.createElement('ul');
+const links = ["Index", "Reservas", "Contacto"];
+const liImagen = document.createElement('li');
+const img = document.createElement('img');
+const ORIGEN = document.createElement('a');
+const footer = document.createElement('footer');
+const parrafoFooter = document.createElement('p');
+const TIME = new Date().getFullYear();
 
 //agrupacion 
 cabecera.appendChild(navegacion);
@@ -11,17 +18,27 @@ navegacion.appendChild(nav);
 nav.appendChild(ul);
 navegacion.className = 'navbar';
 
-const links = ["Index", "Reservas", "Contacto"];
+ORIGEN.href = '/';
+ORIGEN.appendChild(img);
+img.src = 'img/LOGO INICIO.jpg';
+img.alt = 'Espresso';
+
+liImagen.appendChild(ORIGEN);
+ul.appendChild(liImagen);
+
 
 for (const link of links) {
     const li = document.createElement('li');
-    li.innerHTML = `<a href="${link.toLowerCase()}.html" >${link}</a>`
+    li.innerHTML = `<a href="${link.toLowerCase()}.html" >${link}</a>`;
     ul.appendChild(li);
 }
 
 
 //styles
 cabecera.style.backgroundColor = 'pink';
+
+footer.appendChild(parrafoFooter);
+parrafoFooter.innerHTML = '#EspressoCafe' + TIME + ' | Los Polvorines';
 
 
 
