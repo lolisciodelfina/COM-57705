@@ -7,8 +7,8 @@ const ul = document.createElement('ul');
 const links = ["Index", "Reservas", "Contacto"];
 const liImagen = document.createElement('li');
 const img = document.createElement('img');
-const ORIGEN = document.createElement('a');
-const footer = document.createElement('footer');
+const origen = document.createElement('a');
+const footer = document.getElementsByTagName('footer');
 const parrafoFooter = document.createElement('p');
 const TIME = new Date().getFullYear();
 
@@ -16,16 +16,14 @@ const TIME = new Date().getFullYear();
 cabecera.appendChild(navegacion);
 navegacion.appendChild(nav);
 nav.appendChild(ul);
-navegacion.className = 'navbar';
+ul.appendChild(liImagen);
+liImagen.appendChild(origen);
+origen.appendChild(img);
 
-ORIGEN.href = '/';
-ORIGEN.appendChild(img);
+//navegacion.className = 'navbar';
+origen.href = "/";
 img.src = 'img/LOGO INICIO.jpg';
 img.alt = 'Espresso';
-
-liImagen.appendChild(ORIGEN);
-ul.appendChild(liImagen);
-
 
 for (const link of links) {
     const li = document.createElement('li');
@@ -34,64 +32,15 @@ for (const link of links) {
 }
 
 
-//styles
-cabecera.style.backgroundColor = 'pink';
-
-footer.appendChild(parrafoFooter);
-parrafoFooter.innerHTML = '#EspressoCafe' + TIME + ' | Los Polvorines';
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*/Variables
-const cuerpo = document.body;
-const encabezado = document.getElementById('header');
-const navegacion = document.createElement('div'); 
-const nav = document.createElement('nav');
-const ul = document.createElement('ul');
-const links = ["Home", "Productos", "Contacto"];
-const liImagen = document.createElement('li');
-const img = document.createElement('img');
-const ORIGEN = document.createElement('a');
-const footer = document.getElementsByTagName('footer');
-const parrafoFooter = document.createElement('p');
-const TIME = new Date().getFullYear();
-
-
-encabezado.appendChild(navegacion);
-navegacion.appendChild(nav);
-nav.appendChild(ul);
-navegacion.className = 'navbar';
-
-
-ORIGEN.href = '/';
-ORIGEN.appendChild(img);
-img.src = 'https://www.casagokotta.com/media/galleries/medium/ba390-Captura-de-pantalla-2022-09-17-a-las-11.54.05.png';
-img.alt = 'GretaIcon';
-
-liImagen.appendChild(ORIGEN);
-ul.appendChild(liImagen);
-
-for (const link of links) {
-    const li = document.createElement('li');
-    li.innerHTML = <a href="${link.toLowerCase()}.html" >${link}</a>;
-    ul.appendChild(li);
-}
-
-encabezado.style.backgroundColor = '#C7B7A3';
-
-
+//footer
 footer[0].appendChild(parrafoFooter);
-parrafoFooter.innerHTML = '#GretaBa' + TIME + ' | Los Polvorines';*/
+parrafoFooter.innerHTML = "#EspressoCafe " + TIME + "| Los Polvorines";
+
+//------------------------------------------styles
+//header
+cabecera.style.backgroundColor = 'pink';
+img.width = 80;
+img.height = 60;
+
+//footer
+footer[0].style.backgroundColor = '#973131';
