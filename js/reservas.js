@@ -4,6 +4,8 @@ let form = document.getElementById("formulario");
 const main = document.getElementById("mainReserva");
 const divFormu = document.createElement("div");
 const h4Form = document.createElement("h4");
+const boton = document.getElementById("boton");
+let turnosDispo = 10;
 //Orden
 //main.appendChild(form);
 main.appendChild(divFormu);
@@ -24,5 +26,27 @@ main.addEventListener('submit', (e) => {
     divFormu.appendChild(h4Form);
 });
 
+//
+boton.addEventListener('click', (e) => {
+    Swal.fire({
+        icon: "success",
+        title: "Su reserva se ha registrado exitosamente",
+        showConfirmButton: false,
+        timer: 2000
+    });
+});
+boton.addEventListener('click', () => {
+    setTimeout( ()=> {
+        Toastify(
+            {
+                text:"¡Sus datos están protegidos con nosotros!",
+                className: "info",
+                style: {
+                    background: "linear-gradient(to right, #527e65, #225c3b)",
+                }
+            }
+        ).showToast();
+    }, 3000)
+});
 //Style 
-cuerpoReserva.style.backgroundColor = '#ddd';
+

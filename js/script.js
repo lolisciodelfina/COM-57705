@@ -1,1 +1,0 @@
-//document.getElementById("startButton").addEventListener("click", iniciarReservas);

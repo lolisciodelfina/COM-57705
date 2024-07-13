@@ -1,5 +1,5 @@
-//declaracion de variables 
-const cuerpoReserva = document.getElementById('bodyReserva'); 
+//declaracion de constantes index
+const cuerpoReserva = document.getElementById ('body'); 
 const cabecera = document.getElementById('header');
 const navegacion = document.createElement('navbar');
 const nav = document.createElement('nav');
@@ -20,7 +20,7 @@ ul.appendChild(liImagen);
 liImagen.appendChild(origen);
 origen.appendChild(img);
 
-//navegacion.className = 'navbar';
+navegacion.className = 'navbar';
 origen.href = "/";
 img.src = 'img/LOGO INICIO.jpg';
 img.alt = 'Espresso';
@@ -38,9 +38,10 @@ parrafoFooter.innerHTML = "#EspressoCafe " + TIME + "| Los Polvorines";
 
 //------------------------------------------styles
 //header
-cabecera.style.backgroundColor = 'pink';
-img.width = 80;
-img.height = 60;
+cabecera.style.backgroundColor = '#F3FEB8';
+img.width = 90;
+img.height = 80;
 
 //footer
-footer[0].style.backgroundColor = '#973131';
+footer[0].style.backgroundColor = '#225c3b';
+parrafoFooter.style.color = 'white';

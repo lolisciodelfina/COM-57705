@@ -4,27 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript / Comision #57705</title>
-    
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-<body id="bodyReserva"> <!--Body reserva-->
+<body id="body"> <!--Body reserva-->
     <header id="header"></header>
     <main id="mainReserva">
-        <h1 id="title">Reservas</h1>
+        <h1 class="titulo" id="title">Reservas</h1>
         <form id="formulario">
             <label for="">Ingrese su nombre completo, teniendo en cuenta que con él deberá recepcionarse:</label>
             <input id="nombreCompleto" name="" type="text">
+            <br>
             <label for="">Ingrese la cantidad de personas para la reserva:</label>
             <input id="cantPersonas" name="" type="number">
+            <br>
             <label for="">Ingrese el día de Junio que quiere reservar:</label>
             <input id="diaJunio" name="" type="number">
+            <br>
             <label for="">Indique si desea ubicarse en nuestro patio, salón o terraza:</label>
             <input id="ubicacion" name="" type="text">  
-            <input type="submit" name="" value="enviar">  
+            <br>
+            <input type="submit" name="" value="enviar" class="boton" id="boton">  
         </form>
     </main>
     <footer>
     </footer>
     <!--Script de JS-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/navegacion.js"></script>
     <script src="js/reservas.js"></script>
 </body>
