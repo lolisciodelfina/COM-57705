@@ -1,16 +1,18 @@
 //declaracion de constantes index
-const cuerpoReserva = document.getElementById ('body'); 
+const cuerpoReserva = document.getElementById ('body');
 const cabecera = document.getElementById('header');
 const navegacion = document.createElement('navbar');
 const nav = document.createElement('nav');
 const ul = document.createElement('ul');
-const links = ["Index", "Reservas", "Contacto"];
+const links = ["Index", "Reservas", "Productos"];
 const liImagen = document.createElement('li');
 const img = document.createElement('img');
 const origen = document.createElement('a');
 const footer = document.getElementsByTagName('footer');
 const parrafoFooter = document.createElement('p');
 const TIME = new Date().getFullYear();
+
+cabecera.className= 'cabecera';
 
 //agrupacion 
 cabecera.appendChild(navegacion);
@@ -45,3 +47,4 @@ img.height = 80;
 //footer
 footer[0].style.backgroundColor = '#225c3b';
 parrafoFooter.style.color = 'white';
+

@@ -3,7 +3,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Orbitron:wght@400..900&family=Reenie+Beanie&family=Saira+Condensed:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Orbitron:wght@400..900&family=Reenie+Beanie&family=Saira+Condensed:wght@500&display=swap");
 
-
+body{
+    background: #ffffff;
+    transition: .3s ease all;
+    &.dark{
+        background: rgb(9, 10, 9);
+    }
+}
+nav{
+    body.dark &{
+        background: #21382b;
+}}
 .formulario{
     width: 80%;
 }
@@ -11,7 +21,7 @@
     display: flex;
     justify-content: left;
     width: 100%;
-    height: 100%;
+    height: 20%;
     color: #225c3b;
     font-family: "Orbitron", sans-serif;
     align-items: center;
@@ -28,12 +38,18 @@ nav ul li a {
     text-decoration: none;
     color: #225c3b;
     font-size: 1.75rem;
-}
+    body.dark &{
+        color: #F3FEB8;
+}}
 .titulo{
     color: black;
     font-family: "Saira Condensed", sans-serif;
-    font-size: 42px;
-}
+    font-size: 72px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+    body.dark &{
+        color: white;
+}}
 .boton{
     color: white;
     background-color: black;
@@ -45,3 +61,94 @@ nav ul li a {
 .parrafoFooter{
     color: white;
 }
+
+table thead{
+    background-color: #527e65;
+    color: #F3FEB8;
+}
+
+/*------------------------------Index galeria---------------------------------*/
+
+.botonera {
+    display: flex;
+    justify-content: space-evenly;
+    padding: .625rem;
+}
+
+.botonera button {
+    background-color: #225c3b;
+    width: 130px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+}
+
+.slide {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.slide li {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 25rem;
+}
+
+.slide li img {
+    width: 30%;
+    height: 100%;
+    border-radius: 1rem;
+}
+
+.slide li.active {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.button{
+    background: #343D5B;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+    &::after{
+        content: "";
+        display: block;
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        background: azure;
+        top: 0;
+        left: 0;
+        right: unset;
+        border-radius: 100px;
+        transition: .3s ease all;
+        box-shadow: 0px 0px 2px 2px black (0,0,0,.2);
+    }
+    &.active{
+        background: rgb(209, 148, 35);
+        color: black;
+        &::after{
+            right: 0;
+            left: unset;
+        }
+    }
+    span{
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        display: block;
+        background: none;
+        color: azure;
+    }
+}
+
+

@@ -1,0 +1,98 @@
+[
+    {
+        "id_producto": 1,
+        "nombre": "Scon relleno",
+        "descripcion": "Scon capresse relleno de queso, crudo y rúcula",
+        "precio": 4200,
+        "imagen": ":https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.airedesantafe.com.ar%2Fespectaculos%2Fcomo-hacer-scons-queso-rellenos-la-deliciosa-receta-guillermo-calabrese-n517170&psig=AOvVaw1_N4KjXrIsjAb1mzE8oMY4&ust=1721492104106000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMj08IPAs4cDFQAAAAAdAAAAABAE",
+        "stock": 50,
+        "categoria": {
+            "id_categoria": 1,
+            "nombre": "Salados para acompañar"
+        }
+    },
+    {
+        "id_producto": 2,
+        "nombre": "Focaccia",
+        "descripcion": "Sandwich de focaccia relleno de jamon crudo, rúcula y burrata",
+        "precio": 5500,
+        "imagen": "https://www.google.com/url?sa=i&url=https%3A%2F%2Flatablita.com.ar%2Ftienda%2Ffocaccia-de-jamon-crudo-y-burrata%2F&psig=AOvVaw0HIrPG1pF-IDa1WKRln_Av&ust=1721492852910000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCOiG1enCs4cDFQAAAAAdAAAAABAE",
+        "stock": 30,
+        "categoria": {
+            "id_categoria": 2,
+            "nombre": "Salados para acompañar"
+        }
+    },
+    {
+        "id_producto": 3,
+        "nombre": "Tostado",
+        "descripcion": "Tostado prensado de jamón y queso",
+        "precio": 3800,
+        "imagen": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.diariouno.com.ar%2Fsociedad%2Freceta-masterchef-los-secretos-hacer-el-mejor-tostado-jamon-y-queso-n827554&psig=AOvVaw1F-pRsWXrQPtgl5ZK9uTpp&ust=1721493063486000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDz-svDs4cDFQAAAAAdAAAAABAK",
+        "stock": 70,
+        "categoria": {
+            "id_categoria": 3,
+            "nombre": "Salados para acompañar"
+        }
+    },
+    {
+        "id_producto": 4,
+        "nombre": "Chipa XL",
+        "descripcion": "Pan de queso tamaño XL",
+        "precio": 4500,
+        "imagen": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fm.facebook.com%2F107785757274551%2Fposts%2Fchipa-xlvos-ya-probaste-nuestras-chipas-precios-la-docena-esta-450-media-docena-%2F570889057630883%2F&psig=AOvVaw3Jy9ShwVm_V51oY_pDE32J&ust=1721493244322000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCMCy3arEs4cDFQAAAAAdAAAAABAE",
+        "stock": 30,
+        "categoria": {
+            "id_categoria": 1,
+            "nombre": "Salados para acompañar"
+        }
+    },
+    {
+        "id_producto": 5,
+        "nombre": "Porción de torta ",
+        "descripcion": "Porción de cheesecake de frutos rojos",
+        "precio": 5300,
+        "imagen": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fmandolina.co%2Frecetas%2Fcheesecake-de-frutos-rojos%2F&psig=AOvVaw2U-7_chuELZfz3LNwp1MIk&ust=1721493452843000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCPCNtY3Fs4cDFQAAAAAdAAAAABAE",
+        "stock": 16,
+        "categoria": {
+            "id_categoria": 5,
+            "nombre": "Dulces para acompañar"
+        }
+    },
+    {
+        "id_producto": 6,
+        "nombre": "Cookie",
+        "descripcion": "Cookie de vainilla con chips de chocolate",
+        "precio": 2700,
+        "imagen": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.kiwilimon.com%2Freceta%2Fpostres%2Fgalletas-con-chispas-de-chocolate-suaves&psig=AOvVaw1m6RKVXOr6_3n5HrFoMvzl&ust=1721493674955000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCIj8uO7Fs4cDFQAAAAAdAAAAABAE",
+        "stock": 50,
+        "categoria": {
+            "id_categoria": 6,
+            "nombre": "Dulces para acompañar"
+        }
+    },
+    {
+        "id_producto": 7,
+        "nombre": "Alfajor",
+        "descripcion": "Alfajor de chocolate blanco relleno de dulce de leche",
+        "precio": 3100,
+        "imagen": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fes.pampadirect.com%2Fcachafaz-alfajor-white-chocolate-with-dulce-de-leche-wholesale-bulkbox-360-g-12-69-oz-ea-6-alfajores-per-case-12-cases-per-box%2F&psig=AOvVaw3HeTJEG4AdhdUkgWl_lPui&ust=1721493779665000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCNCD6aDGs4cDFQAAAAAdAAAAABAE",
+        "stock": 90,
+        "categoria": {
+            "id_categoria": 7,
+            "nombre": "Dulces para acompañar"
+        }
+    },
+    {
+        "id_producto": 8,
+        "nombre": "Budin",
+        "descripcion": "Porción de budin de limón y amapolas",
+        "precio": 3200,
+        "imagen": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.tiemposur.com.ar%2Finfo-general%2Fcomo-hacer-budin-de-limon-y-semillas-de-amapola&psig=AOvVaw3VFpkzFptWV6n0fjJtRzS7&ust=1721493954165000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLiC7fPGs4cDFQAAAAAdAAAAABAE",
+        "stock": 12,
+        "categoria": {
+            "id_categoria": 8,
+            "nombre": "Dulces para acompañar"
+        }
+    }
+]
